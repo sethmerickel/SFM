@@ -71,19 +71,19 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>V:\Seth\SoftwareDev\SFM\Test\build\install\include;$(IncludePath)</IncludePath>
+    <IncludePath>..\..\;..\build\install\include;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>V:\Seth\SoftwareDev\SFM\Test\build\install\include;$(IncludePath)</IncludePath>
+    <IncludePath>..\..\;..\build\install\include;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
-    <IncludePath>V:\Seth\SoftwareDev\SFM\Test\build\install\include;$(IncludePath)</IncludePath>
+    <IncludePath>..\..\;..\build\install\include;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
-    <IncludePath>V:\Seth\SoftwareDev\SFM\Test\build\install\include;$(IncludePath)</IncludePath>
+    <IncludePath>..\..\;..\build\install\include;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -148,8 +148,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="PointTest.cpp" />
     <ClCompile Include="TestMain.cpp" />
-    <ClCompile Include="TestTest.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\build\googlemock\gmock.vcxproj">
